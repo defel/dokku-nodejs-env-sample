@@ -12,10 +12,10 @@ server.route([
     method: "POST",
     path: '/',
     handler: function(request, reply) {
-        console.log(JSON.stringify(process.env));
         reply(JSON.stringify(process.env));
     }
   }
 ]);
 
+console.log(JSON.stringify(process.env));
 server.start();
