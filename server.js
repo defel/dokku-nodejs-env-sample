@@ -17,5 +17,6 @@ server.route([
   }
 ]);
 
+console.log("PORT:", process.env.PORT);
 console.log(JSON.stringify(process.env));
 server.start();
