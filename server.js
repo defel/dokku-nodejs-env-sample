@@ -9,14 +9,13 @@ server.connection({
 
 server.route([
   {
-    method: "POST",
+    method: "GET",
     path: '/',
     handler: function(request, reply) {
-        reply(JSON.stringify(process.env));
+        reply(process.env);
     }
   }
 ]);
 
-console.log("PORT:", process.env.PORT);
-console.log(JSON.stringify(process.env));
+console.log(process.env);
 server.start();
